@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1118</width>
+    <height>719</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">  background-image: url(:/image-back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    border-radius: 6px;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>-10</y>
+      <width>1061</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="pageHome">
+     <widget class="QPushButton" name="btnCriarColaborador">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>120</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: rgba(255, 255, 255, 180);
+    color: black;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 13px;</string>
+      </property>
+      <property name="text">
+       <string>Criar Colaborador</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnCapturar">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>120</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: rgba(255, 255, 255, 180);
+    color: black;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 13px;</string>
+      </property>
+      <property name="text">
+       <string>Capturar</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageCriarColaborador">
+     <widget class="QStackedWidget" name="stackedCriar">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>991</width>
+        <height>591</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="stepDados">
+       <widget class="QWidget" name="formColaborador" native="true">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>190</y>
+          <width>321</width>
+          <height>271</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">    background-color: rgba(255, 255, 255, 180);
+    color: black;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 13px;</string>
+        </property>
+        <layout class="QFormLayout" name="formLayout_2">
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_1">
+           <property name="text">
+            <string>Nome:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLineEdit" name="inputNome"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="inputApelido">
+           <property name="styleSheet">
+            <string notr="true">    background-color: rgba(255, 255, 255, 180);
+    color: black;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 13px;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QPushButton" name="btnSeguinte">
+           <property name="styleSheet">
+            <string notr="true">    background-color: rgba(255, 255, 255, 180);
+    color: black;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 13px;</string>
+           </property>
+           <property name="text">
+            <string>Seguinte</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Data de Nascimento</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0" colspan="2">
+          <widget class="QDateEdit" name="inputDataNascimento"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">    background-color: rgba(255, 255, 255, 180);
+    color: black;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 13px;</string>
+           </property>
+           <property name="text">
+            <string>Apelido</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="btnVoltar_2">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>40</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Voltar</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="stepCaptura">
+       <widget class="QLabel" name="labelVideo">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>90</y>
+          <width>371</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="stepValidacao"/>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageCaptura">
+     <widget class="QPushButton" name="btnVoltar">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>63</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Voltar </string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frameCamera">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>100</y>
+        <width>311</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 3px solid white;
+border-radius: 210px;
+background-color: black;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QLabel" name="labelVideo_2">
+       <property name="geometry">
+        <rect>
+         <x>-90</x>
+         <y>-10</y>
+         <width>521</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="labelStatus">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>470</y>
+        <width>251</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="CircularProgress" name="circularProgress" native="true">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>90</y>
+        <width>331</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1118</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CircularProgress</class>
+   <extends>QWidget</extends>
+   <header>circularprogress.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

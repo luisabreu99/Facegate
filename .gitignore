@@ -1,0 +1,37 @@
+# Build
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+
+# Qt / QtCreator
+*.user
+*.user.*
+*.autosave
+*.qmlc
+*.qmlproject.user
+.qtcreator/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Compilados
+*.exe
+*.dll
+*.so
+*.o
+*.obj
+*.a
+
+# Logs
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# Temporários
+*.tmp
+*.bak

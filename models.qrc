@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/models"/>
+    <qresource prefix="/">
+        <file>face_landmarker_5_68.onnx</file>
+    </qresource>
+</RCC>
