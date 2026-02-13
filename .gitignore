@@ -1,0 +1,6 @@
+build/
+*.db
+*.sqlite
+*.log
+*.autosave
+CMakeLists.txt.user
